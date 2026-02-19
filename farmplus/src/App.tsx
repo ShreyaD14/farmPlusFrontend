@@ -9,7 +9,8 @@ import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
 import GovernmentSchemes from './pages/GovernmentSchemes';
 import Login from './components/login';
-import Signup from './components/Signup';
+import Signup from './components/signup';
+import Dashboard from './components/Dashboard';
 
 const Home = () => (
   <>
@@ -34,6 +35,7 @@ function App() {
         <Route path="/government-schemes" element={<GovernmentSchemes />} />
         <Route path="/login"              element={<Login />} />
         <Route path="/signup"             element={<Signup />} />
+        <Route path="/smart-advisory"     element={<Dashboard />} />
       </Routes>
     </div>
   );
