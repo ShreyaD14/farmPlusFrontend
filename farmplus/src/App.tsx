@@ -7,6 +7,7 @@ import MarketTrends from './components/MarketTrends';
 import KnowledgeHub from './components/KnowledgeHub';
 import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
+import LivestockCare from './pages/Livestockcare';
 
 // Home page layout
 function Home() {
@@ -16,7 +17,6 @@ function Home() {
       <HeroSection />
       <div className="page-body">
         <Features />
-  
         <MarketTrends />
         <KnowledgeHub />
       </div>
@@ -32,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market" element={<MarketDashboard />} />
+        <Route path="/livestock-care" element={<LivestockCare />} />
       </Routes>
     </Router>
   );

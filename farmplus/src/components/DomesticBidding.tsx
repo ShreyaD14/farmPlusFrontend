@@ -23,7 +23,7 @@ const DomesticBidding: React.FC = () => {
   const [selectedCrop, setSelectedCrop] = useState("Wheat");
   const [price, setPrice] = useState("2000");
   const [quantity, setQuantity] = useState("100");
-  const [bids, setBids] = useState<Bid[]>(mockBids);
+  const [bids] = useState<Bid[]>(mockBids);
   const [accepted, setAccepted] = useState<string | null>(null);
 
   const handleAccept = (id: string) => {
