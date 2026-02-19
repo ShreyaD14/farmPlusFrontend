@@ -16,6 +16,7 @@ function Home() {
       <HeroSection />
       <div className="page-body">
         <Features />
+  
         <MarketTrends />
         <KnowledgeHub />
       </div>
