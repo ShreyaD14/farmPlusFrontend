@@ -1,10 +1,4 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-html, body, #root {
-  width: 100%; height: 100%;
-  overflow: hidden;
-}
-
+/* Scoped only to dash-page — does NOT affect other pages */
 .dash-page {
   width: 100vw;
   height: 100vh;
@@ -74,7 +68,7 @@ html, body, #root {
 .btn-outline { background: #fff; color: #2e7d32; border: 1px solid #2e7d32; border-radius: 8px; padding: 6px 14px; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
 .btn-solid { background: #2e7d32; color: #fff; border: none; border-radius: 8px; padding: 6px 14px; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
 
-/* ── STAT ROW ── */
+/* STAT ROW */
 .stat-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -89,8 +83,6 @@ html, body, #root {
   transition: transform 0.2s;
 }
 .stat-card:hover { transform: translateY(-2px); }
-
-/* dark green heading strip */
 .sc-label {
   background: #2e7d32;
   color: #fff;
@@ -102,7 +94,6 @@ html, body, #root {
   padding: 7px 11px;
   letter-spacing: 0.02em;
 }
-/* pure white content */
 .sc-content {
   background: #fff;
   padding: 9px 11px 10px;
@@ -114,7 +105,7 @@ html, body, #root {
 .py { background: rgba(249,168,37,0.15); color: #b36f00; border: 1px solid rgba(249,168,37,0.4); }
 .pr { background: rgba(239,83,80,0.12); color: #c0392b; border: 1px solid rgba(239,83,80,0.35); }
 
-/* ── MAIN GRID ── */
+/* MAIN GRID */
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 260px;
@@ -125,7 +116,7 @@ html, body, #root {
   min-height: 0;
 }
 
-/* ALL MAIN CARDS */
+/* CARDS */
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -135,8 +126,6 @@ html, body, #root {
   min-height: 0;
   background: #fff;
 }
-
-/* card header — light cream/white with dark text (like screenshot) */
 .card-header {
   background: #fff;
   display: flex;
@@ -150,8 +139,6 @@ html, body, #root {
 }
 .card-title { font-size: 0.88rem; font-weight: 700; color: #1a1a1a; }
 .dots { color: #bbb; font-size: 0.68rem; }
-
-/* white card body */
 .card-body {
   background: #fff;
   flex: 1;
@@ -162,7 +149,7 @@ html, body, #root {
   padding: 10px 14px;
 }
 
-/* ── CROP INTELLIGENCE ── */
+/* CROP INTELLIGENCE */
 .crop-body { display: flex; align-items: center; justify-content: space-between; flex: 1; min-height: 0; }
 .crop-left { display: flex; flex-direction: column; gap: 5px; }
 .cn { font-size: 1rem; font-weight: 700; color: #1a1a1a; }
@@ -177,7 +164,7 @@ html, body, #root {
 .gbtn { background: #2e7d32; color: #fff; border: none; border-radius: 8px; padding: 7px 12px; font-size: 0.74rem; font-weight: 600; cursor: pointer; }
 .gbtn.mt8 { margin-top: 8px; width: 100%; }
 
-/* ── LIVESTOCK HEALTH ── */
+/* LIVESTOCK HEALTH */
 .live-body { display: flex; align-items: center; gap: 16px; flex: 1; min-height: 0; }
 .live-legend { display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: #333; }
 .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
@@ -185,7 +172,7 @@ html, body, #root {
 .dot.dy { background: #f9a825; }
 .dot.dr { background: #ef5350; }
 
-/* ── ALERTS ── */
+/* ALERTS */
 .alerts-card { grid-row: 1 / 3; grid-column: 3; }
 .alerts-body {
   background: #fff;
@@ -226,7 +213,7 @@ html, body, #root {
   width: 100%;
 }
 
-/* ── TRENDS ── */
+/* TRENDS */
 .trends-card { grid-column: 1 / 3; }
 .trends-body {
   background: #fff;
@@ -263,8 +250,6 @@ html, body, #root {
   align-items: center;
   gap: 4px;
 }
-
-/* trends legend */
 .tlegend {
   display: flex;
   align-items: center;
@@ -289,7 +274,3 @@ html, body, #root {
   font-size: 0.67rem;
   font-weight: 600;
 }
-
-
-
-

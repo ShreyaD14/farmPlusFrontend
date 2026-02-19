@@ -11,6 +11,7 @@ import GovernmentSchemes from './pages/GovernmentSchemes';
 import Login from './components/login';
 import Signup from './components/signup';
 import Dashboard from './components/Dashboard';
+import LivestockCare from './pages/livestock';
 
 const Home = () => (
   <>
@@ -36,6 +37,7 @@ function App() {
         <Route path="/login"              element={<Login />} />
         <Route path="/signup"             element={<Signup />} />
         <Route path="/smart-advisory"     element={<Dashboard />} />
+        <Route path="/livestock-care"     element={<LivestockCare />} />
       </Routes>
     </div>
   );
