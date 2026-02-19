@@ -1,15 +1,25 @@
-import Navbar from './components/navbar'
-import Hero from './components/hero'
-import Features from './components/features'
+import './App.css';
+import Navbar from './components/navbar';
+import HeroSection from './components/HeroSection';
+import Features from './components/features';
+import MarketTrends from './components/MarketTrends';
+import KnowledgeHub from './components/KnowledgeHub';
+import CTABanner from './components/CTABanner';
 
 function App() {
   return (
-    <>
+    <div className="app-wrapper">
       <Navbar />
-      <Hero />
-      <Features />
-    </>
-  )
+      <HeroSection />
+      <div className="page-body">
+        <Features />
+        <MarketTrends />
+        <KnowledgeHub />
+      </div>
+      <CTABanner />
+      <div className="bottom-band" />
+    </div>
+  );
 }
 
-export default App
+export default App;

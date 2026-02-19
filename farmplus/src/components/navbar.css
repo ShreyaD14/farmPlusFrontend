@@ -1,27 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
 .navbar {
-  position: sticky;
-  top: 0;
-  background: #2e7d32;
-  color: white;
+  background: #2d6a2d;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  z-index: 1000;
+  padding: 0 2.5rem;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* ── LOGO ── */
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: #c8a000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* ── NAV LINKS ── */
 .nav-links {
   display: flex;
+  gap: 2rem;
   list-style: none;
-  gap: 30px;
+  flex: 1;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.auth {
+.nav-links a {
+  color: #d4edda;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* ── RIGHT SIDE ── */
+.nav-right {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 1.2rem;
+  flex-shrink: 0;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav-icons svg {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+  display: block;
+}
+
+.nav-icons svg:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ── AUTH BUTTONS ── */
+.nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-auth a {
+  color: #d4edda;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+.nav-auth a:hover {
+  color: #fff;
+}
+
+.nav-auth .signup-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+}
+
+.nav-auth .signup-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0 1rem;
+  }
+}
+
+/* Logo image */
+.logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
 }
