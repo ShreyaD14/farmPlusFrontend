@@ -1,0 +1,27 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #2e7d32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.auth {
+  display: flex;
+  gap: 20px;
+}
