@@ -7,12 +7,10 @@ import MarketTrends from './components/MarketTrends';
 import KnowledgeHub from './components/KnowledgeHub';
 import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
-import LivestockCare from './pages/Livestockcare';
 import GovernmentSchemes from './pages/GovernmentSchemes';
 import Login from './components/login';
 import Signup from './components/Signup';
 
-// Home page layout
 const Home = () => (
   <>
     <HeroSection />
@@ -31,12 +29,11 @@ function App() {
     <div className="app-wrapper">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/market" element={<MarketDashboard />} />
-        <Route path="/livestock-care" element={<LivestockCare />} />
+        <Route path="/"                   element={<Home />} />
+        <Route path="/market"             element={<MarketDashboard />} />
         <Route path="/government-schemes" element={<GovernmentSchemes />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/login"              element={<Login />} />
+        <Route path="/signup"             element={<Signup />} />
       </Routes>
     </div>
   );
