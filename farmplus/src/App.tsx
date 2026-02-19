@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import HeroSection from './components/HeroSection';
 import Features from './components/features';
@@ -8,33 +8,37 @@ import KnowledgeHub from './components/KnowledgeHub';
 import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
 import LivestockCare from './pages/Livestockcare';
+import GovernmentSchemes from './pages/GovernmentSchemes';
+import Login from './components/login';
+import Signup from './components/Signup';
 
 // Home page layout
-function Home() {
-  return (
-    <div className="app-wrapper">
-      <Navbar />
-      <HeroSection />
-      <div className="page-body">
-        <Features />
-        <MarketTrends />
-        <KnowledgeHub />
-      </div>
-      <CTABanner />
-      <div className="bottom-band" />
+const Home = () => (
+  <>
+    <HeroSection />
+    <div className="page-body">
+      <Features />
+      <MarketTrends />
+      <KnowledgeHub />
     </div>
-  );
-}
+    <CTABanner />
+    <div className="bottom-band" />
+  </>
+);
 
 function App() {
   return (
-    <Router>
+    <div className="app-wrapper">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market" element={<MarketDashboard />} />
         <Route path="/livestock-care" element={<LivestockCare />} />
+        <Route path="/government-schemes" element={<GovernmentSchemes />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 
