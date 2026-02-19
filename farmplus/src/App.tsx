@@ -7,8 +7,8 @@ import MarketTrends from './components/MarketTrends';
 import KnowledgeHub from './components/KnowledgeHub';
 import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
+import GovernmentSchemes from './pages/GovernmentSchemes';
 
-// Home page layout
 const Home = () => (
   <>
     <HeroSection />
@@ -29,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market" element={<MarketDashboard />} />
+        <Route path="/government-schemes" element={<GovernmentSchemes />} />
       </Routes>
     </div>
   );
