@@ -9,7 +9,7 @@ import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
 import GovernmentSchemes from './pages/GovernmentSchemes';
 import Login from './components/login';
-import Signup from './components/Signup';
+import Signup from './components/signup';
 
 const Home = () => (
   <>
