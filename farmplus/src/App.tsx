@@ -9,6 +9,10 @@ import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
 import GovernmentSchemes from './pages/GovernmentSchemes';
 import KnowledgeHubPage from './pages/Knowledgehub';
+import Login from './components/login';
+import Signup from './components/signup';
+import Dashboard from './components/Dashboard';
+import LivestockCare from './pages/livestock';
 
 const Home = () => (
   <>
@@ -28,10 +32,14 @@ function App() {
     <div className="app-wrapper">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/market" element={<MarketDashboard />} />
+        <Route path="/"                   element={<Home />} />
+        <Route path="/market"             element={<MarketDashboard />} />
         <Route path="/government-schemes" element={<GovernmentSchemes />} />
-        <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
+        <Route path="/knowledge-hub"      element={<KnowledgeHubPage />} />
+        <Route path="/login"              element={<Login />} />
+        <Route path="/signup"             element={<Signup />} />
+        <Route path="/smart-advisory"     element={<Dashboard />} />
+        <Route path="/livestock-care"     element={<LivestockCare />} />
       </Routes>
     </div>
   );
