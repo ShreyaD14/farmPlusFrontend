@@ -4,14 +4,11 @@ import Navbar from './components/navbar';
 import HeroSection from './components/HeroSection';
 import Features from './components/features';
 import MarketTrends from './components/MarketTrends';
-import KnowledgeHub from './components/KnowledgeHub';
+import KnowledgeHubHome from './components/KnowledgeHub';
 import CTABanner from './components/CTABanner';
 import MarketDashboard from './pages/MarketDashboard';
 import GovernmentSchemes from './pages/GovernmentSchemes';
-import Login from './components/login';
-import Signup from './components/signup';
-import Dashboard from './components/Dashboard';
-import LivestockCare from './pages/livestock';
+import KnowledgeHubPage from './pages/Knowledgehub';
 
 const Home = () => (
   <>
@@ -19,7 +16,7 @@ const Home = () => (
     <div className="page-body">
       <Features />
       <MarketTrends />
-      <KnowledgeHub />
+      <KnowledgeHubHome />
     </div>
     <CTABanner />
     <div className="bottom-band" />
@@ -31,13 +28,10 @@ function App() {
     <div className="app-wrapper">
       <Navbar />
       <Routes>
-        <Route path="/"                   element={<Home />} />
-        <Route path="/market"             element={<MarketDashboard />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/market" element={<MarketDashboard />} />
         <Route path="/government-schemes" element={<GovernmentSchemes />} />
-        <Route path="/login"              element={<Login />} />
-        <Route path="/signup"             element={<Signup />} />
-        <Route path="/smart-advisory"     element={<Dashboard />} />
-        <Route path="/livestock-care"     element={<LivestockCare />} />
+        <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
       </Routes>
     </div>
   );
